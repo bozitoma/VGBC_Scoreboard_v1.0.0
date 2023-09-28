@@ -1,0 +1,16 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema",
+
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"player1_name": {"type": "string"},
+		"player1_prefix": {"type": "string"},
+		"player1_score": {"type": "number"},
+		"player2_name": {"type": "string"},
+		"player2_prefix": {"type": "string"},
+		"player2_score": {"type": "number"},
+		"fullRoundText": {"type": "string"}
+	},
+	"required": ["player1_name","player1_prefix","player1_score","player2_name","player2_prefix","player2_score","fullRoundText"]
+}
