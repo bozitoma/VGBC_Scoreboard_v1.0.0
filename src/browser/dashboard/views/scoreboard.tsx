@@ -2,7 +2,7 @@ import "../styles/global";
 
 import createTheme from "@mui/material/styles/createTheme";
 import ThemeProvider from "@mui/material/styles/ThemeProvider";
-import { Sample } from "../components/scoreboard"; // コンポーネントを参照、ThemeProviderの間にぶち込む
+import { Sample } from "../components/index"; // コンポーネントを参照、ThemeProviderの間にぶち込む
 import { render } from "../../render";
 import CssBaseline from "@mui/material/CssBaseline";
 

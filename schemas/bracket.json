@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "bracketData": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "type": "object",
+        "properties": {
+          "identifier": {
+            "type": "string"
+          },
+          "fullRoundText": {
+            "type": "string"
+          },
+          "player1": {
+            "$ref": "#/definitions/Bracketscore"
+          },
+          "player2": {
+            "$ref": "#/definitions/Bracketscore"
+          }
+        },
+        "required": ["identifier", "fullRoundText", "player1", "player2"]
+      }
+    }
+  },
+  "required": ["bracketData"],
+  "definitions": {
+    "Bracketscore": {
+      "type": "object",
+      "properties": {
+        "prefix": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "score": {
+          "type": "number"
+        }
+      },
+      "required": ["prefix", "name", "score"]
+    }
+  }
+}

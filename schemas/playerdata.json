@@ -1,0 +1,123 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+      "playerData": {
+          "type": "object",
+          "properties": {
+              "player1": {
+                  "$ref": "#/definitions/Player"
+              },
+              "player2": {
+                  "$ref": "#/definitions/Player"
+              }
+          },
+          "required": ["player1", "player2"]
+      }
+  },
+  "required": ["playerData"],
+  "definitions": {
+      "Player": {
+          "type": "object",
+          "properties": {
+              "id": {
+                  "type": "number"
+              },
+              "name": {
+                  "type": "string"
+              },
+              "score": {
+                  "type": "number"
+              },
+              "initialSeedNum": {
+                  "type": "number"
+              },
+              "gamerTag": {
+                  "type": "string"
+              },
+              "prefix": {
+                  "type": ["string", "null"]
+              },
+              "externalUsername": {
+                  "type": ["string", "null"]
+              },
+              "bio": {
+                  "type": ["string", "null"]
+              },
+              "birthday": {
+                  "type": ["string", "null"]
+              },
+              "city": {
+                  "type": ["string", "null"]
+              },
+              "country": {
+                  "type": ["string", "null"]
+              },
+              "winRate": {
+                  "type": "number"
+              },
+              "paginatedSetsDetails": {
+                  "type": ["array", "null"],
+                  "items": {
+                      "$ref": "#/definitions/SetDetails"
+                  }
+              },
+              "recentStandings": {
+                  "type": ["array", "null"],
+                  "items": {
+                      "$ref": "#/definitions/Standing"
+                  }
+              },
+              "rankings": {
+                  "type": ["array", "null"],
+                  "items": {
+                      "type": "any"
+                  }
+              }
+          },
+          "required": ["id", "name", "score", "initialSeedNum", "gamerTag"]
+      },
+      "SetDetails": {
+          "type": "object",
+          "properties": {
+              "identifier": {
+                  "type": "string"
+              },
+              "phasename": {
+                  "type": "string"
+              },
+              "Round": {
+                  "type": "string"
+              },
+              "player1name": {
+                  "type": ["string", "null"]
+              },
+              "player1score": {
+                  "type": ["number", "null"]
+              },
+              "player2name": {
+                  "type": ["string", "null"]
+              },
+              "player2score": {
+                  "type": ["number", "null"]
+              }
+          },
+          "required": ["identifier", "phasename", "Round", "player1name", "player2score"]
+      },
+      "Standing": {
+          "type": "object",
+          "properties": {
+              "tournamentName": {
+                  "type": "string"
+              },
+              "standing": {
+                  "type": "number"
+              },
+              "numEntrants": {
+                  "type": "number"
+              }
+          },
+          "required": ["tournamentName", "standing", "numEntrants"]
+      }
+  }
+}

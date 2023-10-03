@@ -212,9 +212,9 @@ export const getStreamQueue = async (url?: string): Promise<StreamQueue> => {
             }
             
             // 変更箇所: 直接 participants から gamerTag と prefix を取得
-            const team = slot?.entrant?.participants[0]?.prefix || "";
-            const name = slot?.entrant?.participants[0]?.gamerTag || "";
-        
+            const team = slot?.entrant?.participants?.[0]?.prefix || "";
+            const name = slot?.entrant?.participants?.[0]?.gamerTag || "";
+
             return {
                 team,
                 playerName: name,
@@ -237,8 +237,8 @@ export const getStreamQueue = async (url?: string): Promise<StreamQueue> => {
 
     streamQueue.push(
         ...(res?.data?.event?.sets?.nodes?.map((set: any) => {
-            const players = set.slots.map((slot: any) => {
-                if (!slot?.entrant) {
+              const players = set.slots.map((slot: any) => {
+                if (!slot?.entrant || !slot.entrant.participants || slot.entrant.participants.length === 0) {
                     return {
                         team: "",
                         playerName: "",
@@ -246,17 +246,16 @@ export const getStreamQueue = async (url?: string): Promise<StreamQueue> => {
                         score: 0,
                     }
                 }
-    
-                // 変更箇所: 直接 participants から gamerTag と prefix を取得
-                const team = slot?.entrant?.participants[0]?.prefix || "";
-                const name = slot?.entrant?.participants[0]?.gamerTag || "";
-    
+                
+                const team = slot.entrant.participants[0]?.prefix || "";
+                const name = slot.entrant.participants[0]?.gamerTag || "";
+                const twitterID = (slot.entrant.participants[0]?.user?.authorizations && slot.entrant.participants[0]?.user?.authorizations.length > 0) ?
+                    slot.entrant.participants[0]?.user?.authorizations[0]?.externalUsername : "";
+                
                 return {
                     team,
                     playerName: name,
-                    xID:
-                        slot?.entrant?.participants[0]?.user?.authorizations[0]
-                            ?.externalUsername || "",
+                    twitterID: twitterID,
                     score: 0,
                 }
             });

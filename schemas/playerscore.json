@@ -3,10 +3,10 @@
 	"type": "object",
 	"additionalProperties": false,
 	"properties": {
-		"team": {"type": "string"},
-		"playerName": {"type": "string"},
+		"prefix": {"type": "string"},
+		"name": {"type": "string"},
 		"score": {"type": "number"},
-		"twitterID": {"type": "string"}
+		"xID": {"type": "string"}
 	},
-	"required": ["team", "playerName", "score", "twitterID"]
+	"required": ["prefix", "name", "score", "xID"]
 }

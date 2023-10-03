@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "McLeft": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "xID": {
+                    "type": "string"
+                }
+            },
+            "required": ["name", "xID"]
+        },
+        "McRight": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "xID": {
+                    "type": "string"
+                }
+            },
+            "required": ["name", "xID"]
+        }
+    },
+    "required": ["McLeft", "McRight"]
+}

@@ -5,15 +5,22 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface Scoreboard {
-	id?: number;
-	player1: Playerscore;
-	player2: Playerscore;
-	fullRoundText: string;
+export interface Bracket {
+	/**
+	 * @minItems 0
+	 */
+	bracketData: {
+		identifier: string;
+		fullRoundText: string;
+		player1: Bracketscore;
+		player2: Bracketscore;
+		[k: string]: unknown;
+	}[];
+	[k: string]: unknown;
 }
-export interface Playerscore {
+export interface Bracketscore {
 	prefix: string;
 	name: string;
 	score: number;
-	xID: string;
+	[k: string]: unknown;
 }

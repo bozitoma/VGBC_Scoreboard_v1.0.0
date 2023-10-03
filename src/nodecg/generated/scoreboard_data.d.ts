@@ -5,11 +5,11 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface Scoreboard {
+export interface ScoreboardData {
 	id?: number;
-	player1: Playerscore;
-	player2: Playerscore;
-	fullRoundText: string;
+	player1?: Playerscore;
+	player2?: Playerscore;
+	fullRoundText?: string;
 }
 export interface Playerscore {
 	prefix: string;

@@ -1,31 +1,21 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema",
-    "type": "object",
-    "additionalProperties": false,
-    "properties": {
-        "player1": {
-            "type": "object",
-            "properties": {
-                "name": {"type": "string"},
-                "prefix": {"type": "string"},
-                "xID": {"type": "string"},
-                "score": {"type": "number"}
-            },
-            "required": ["name", "prefix", "score"]
+	"$schema": "http://json-schema.org/draft-04/schema",
+
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"id": {
+            "type": "number"
         },
-        "player2": {
-            "type": "object",
-            "properties": {
-                "name": {"type": "string"},
-                "prefix": {"type": "string"},
-                "xID": {"type": "string"},
-                "score": {"type": "number"}
-            },
-            "required": ["name", "prefix", "score"]
-        },
-        "fullRoundText": {
+		"player1": {
+			"$ref": "./playerscore.json"
+		},
+		"player2": {
+			"$ref": "./playerscore.json"
+		},
+		"fullRoundText": {
             "type": "string"
         }
-    },
-    "required": ["player1", "player2", "fullRoundText"]
+	},
+	"required": ["player1","player2","fullRoundText"]
 }

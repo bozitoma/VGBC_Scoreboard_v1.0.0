@@ -6,8 +6,8 @@
  */
 
 export interface Playerscore {
-	team: string;
-	playerName: string;
+	prefix: string;
+	name: string;
 	score: number;
-	twitterID: string;
+	xID: string;
 }

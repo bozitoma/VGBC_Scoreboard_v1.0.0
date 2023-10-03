@@ -178,14 +178,14 @@ export const transformApiResponseToScoreboard = (response: APIResponse): Transfo
     const player1 = {
         name: player1Data?.gamerTag || "Player1",
         prefix: player1Data?.prefix || "",
-        Xid: "",
+        xID: "",
         score: 0
     };
 
     const player2 = {
         name: player2Data?.gamerTag || "Player2",
         prefix: player2Data?.prefix || "",
-        Xid: "",
+        xID: "",
         score: 0
     };
 

@@ -191,3 +191,716 @@ export const transformApiResponseToScoreboard = (response: APIResponse): Transfo
         fullRoundText: fullRoundText,
     };
 };
+
+
+{
+  "data": {
+    "set": {
+      "id": 64727141,
+      "slots": [
+        {
+          "id": "64727141-0",
+          "entrant": {
+            "id": 14157989,
+            "name": "random account 13",
+            "initialSeedNum": 13,
+            "participants": [
+              {
+                "gamerTag": "random account 13",
+                "prefix": "",
+                "user": null,
+                "player": {
+                  "recentStandings": null,
+                  "sets": {
+                    "nodes": [
+                      {
+                        "createdAt": 1693865408,
+                        "slots": [
+                          {
+                            "entrant": {
+                              "participants": [
+                                {
+                                  "prefix": "EGS",
+                                  "gamerTag": "Staff account A",
+                                  "player": {
+                                    "id": 1823138
+                                  }
+                                }
+                              ]
+                            },
+                            "standing": {
+                              "stats": {
+                                "score": {
+                                  "value": 1
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "entrant": {
+                              "participants": [
+                                {
+                                  "prefix": "",
+                                  "gamerTag": "random account 13",
+                                  "player": {
+                                    "id": 3615062
+                                  }
+                                }
+                              ]
+                            },
+                            "standing": {
+                              "stats": {
+                                "score": {
+                                  "value": 3
+                                }
+                              }
+                            }
+                          }
+                        ],
+                        "event": {
+                          "tournament": {
+                            "name": "API TEST"
+                          }
+                        }
+                      },
+                      {
+                        "createdAt": 1693865074,
+                        "slots": [
+                          {
+                            "entrant": {
+                              "participants": [
+                                {
+                                  "prefix": "",
+                                  "gamerTag": "random account 13",
+                                  "player": {
+                                    "id": 3615062
+                                  }
+                                }
+                              ]
+                            },
+                            "standing": {
+                              "stats": {
+                                "score": {
+                                  "value": 3
+                                }
+                              }
+                            }
+                          }
+                        ],
+                        "event": {
+                          "tournament": {
+                            "name": "API TEST"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "rankings": null
+                }
+              }
+            ],
+            "paginatedSets": {
+              "nodes": [
+                {
+                  "id": 64727139,
+                  "identifier": "A",
+                  "phaseGroup": {
+                    "phase": {
+                      "name": "Top8"
+                    }
+                  },
+                  "fullRoundText": "Winners Semi-Final",
+                  "lPlacement": 5,
+                  "wPlacement": 3,
+                  "slots": [
+                    {
+                      "entrant": {
+                        "participants": [
+                          {
+                            "prefix": "EGS",
+                            "gamerTag": "Staff account A"
+                          }
+                        ]
+                      },
+                      "standing": {
+                        "stats": {
+                          "score": {
+                            "value": 1
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "entrant": {
+                        "participants": [
+                          {
+                            "prefix": "",
+                            "gamerTag": "random account 13"
+                          }
+                        ]
+                      },
+                      "standing": {
+                        "stats": {
+                          "score": {
+                            "value": 3
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": 64726974,
+                  "identifier": "Z",
+                  "phaseGroup": {
+                    "phase": {
+                      "name": "Pools"
+                    }
+                  },
+                  "fullRoundText": "Winners Quarter-Final",
+                  "lPlacement": 9,
+                  "wPlacement": 5,
+                  "slots": [
+                    {
+                      "entrant": {
+                        "participants": [
+                          {
+                            "prefix": "",
+                            "gamerTag": "random account 13"
+                          }
+                        ]
+                      },
+                      "standing": {
+                        "stats": {
+                          "score": {
+                            "value": 3
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "entrant": {
+                        "participants": [
+                          {
+                            "prefix": "",
+                            "gamerTag": "random account 27"
+                          }
+                        ]
+                      },
+                      "standing": {
+                        "stats": {
+                          "score": {
+                            "value": 2
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": 64726967,
+                  "identifier": "S",
+                  "phaseGroup": {
+                    "phase": {
+                      "name": "Pools"
+                    }
+                  },
+                  "fullRoundText": "Winners Round 2",
+                  "lPlacement": 17,
+                  "wPlacement": 9,
+                  "slots": [
+                    {
+                      "entrant": {
+                        "participants": [
+                          {
+                            "prefix": "",
+                            "gamerTag": "random account 28"
+                          }
+                        ]
+                      },
+                      "standing": {
+                        "stats": {
+                          "score": {
+                            "value": 2
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "entrant": {
+                        "participants": [
+                          {
+                            "prefix": "",
+                            "gamerTag": "random account 13"
+                          }
+                        ]
+                      },
+                      "standing": {
+                        "stats": {
+                          "score": {
+                            "value": 3
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": 64726954,
+                  "identifier": "F",
+                  "phaseGroup": {
+                    "phase": {
+                      "name": "Pools"
+                    }
+                  },
+                  "fullRoundText": "Winners Round 1",
+                  "lPlacement": 25,
+                  "wPlacement": 17,
+                  "slots": [
+                    {
+                      "entrant": {
+                        "participants": [
+                          {
+                            "prefix": "",
+                            "gamerTag": "random account 13"
+                          }
+                        ]
+                      },
+                      "standing": {
+                        "stats": {
+                          "score": {
+                            "value": 3
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "entrant": {
+                        "participants": [
+                          {
+                            "prefix": "ZETA",
+                            "gamerTag": "random account 08"
+                          }
+                        ]
+                      },
+                      "standing": {
+                        "stats": {
+                          "score": {
+                            "value": 1
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": 64727141,
+                  "identifier": "C",
+                  "phaseGroup": {
+                    "phase": {
+                      "name": "Top8"
+                    }
+                  },
+                  "fullRoundText": "Winners Final",
+                  "lPlacement": 3,
+                  "wPlacement": 2,
+                  "slots": [
+                    {
+                      "entrant": {
+                        "participants": [
+                          {
+                            "prefix": "",
+                            "gamerTag": "random account 13"
+                          }
+                        ]
+                      },
+                      "standing": {
+                        "stats": {
+                          "score": {
+                            "value": null
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "entrant": {
+                        "participants": [
+                          {
+                            "prefix": "KITA IKUYO GAME",
+                            "gamerTag": "Tempra"
+                          }
+                        ]
+                      },
+                      "standing": {
+                        "stats": {
+                          "score": {
+                            "value": null
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "64727141-1",
+          "entrant": {
+            "id": 6398755,
+            "name": "EGS | Tempra",
+            "initialSeedNum": 2,
+            "participants": [
+              {
+                "gamerTag": "Tempra",
+                "prefix": "KITA IKUYO GAME",
+                "user": {
+                  "authorizations": [
+                    {
+                      "externalUsername": "tempra_chan"
+                    }
+                  ],
+                  "bio": "こんばんオムオム～＾",
+                  "birthday": "",
+                  "location": {
+                    "city": "東京",
+                    "country": "Japan",
+                    "state": null
+                  }
+                },
+                "player": {
+                  "recentStandings": [
+                    {
+                      "standing": 9,
+                      "entrant": {
+                        "event": {
+                          "numEntrants": 20,
+                          "tournament": {
+                            "name": "Weekly Smash Party ～スマパ～ #103"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "standing": 65,
+                      "entrant": {
+                        "event": {
+                          "numEntrants": 124,
+                          "tournament": {
+                            "name": "Gen 2.0"
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "sets": {
+                    "nodes": [
+                      {
+                        "createdAt": 1693865408,
+                        "slots": [
+                          {
+                            "entrant": {
+                              "participants": [
+                                {
+                                  "prefix": "KITA IKUYO GAME",
+                                  "gamerTag": "Tempra",
+                                  "player": {
+                                    "id": 376598
+                                  }
+                                }
+                              ]
+                            },
+                            "standing": {
+                              "stats": {
+                                "score": {
+                                  "value": 3
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "entrant": {
+                              "participants": [
+                                {
+                                  "prefix": "",
+                                  "gamerTag": "random account 04",
+                                  "player": {
+                                    "id": 2092555
+                                  }
+                                }
+                              ]
+                            },
+                            "standing": {
+                              "stats": {
+                                "score": {
+                                  "value": 0
+                                }
+                              }
+                            }
+                          }
+                        ]
+                    ]
+                  },
+                  "rankings": null
+                }
+              }
+            ],
+            "paginatedSets": {
+              "nodes": [
+                {
+                  "id": 64727140,
+                  "identifier": "B",
+                  "phaseGroup": {
+                    "phase": {
+                      "name": "Top8"
+                    }
+                  },
+                  "fullRoundText": "Winners Semi-Final",
+                  "lPlacement": 5,
+                  "wPlacement": 3,
+                  "slots": [
+                    {
+                      "entrant": {
+                        "participants": [
+                          {
+                            "prefix": "KITA IKUYO GAME",
+                            "gamerTag": "Tempra"
+                          }
+                        ]
+                      },
+                      "standing": {
+                        "stats": {
+                          "score": {
+                            "value": 3
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "entrant": {
+                        "participants": [
+                          {
+                            "prefix": "",
+                            "gamerTag": "random account 04"
+                          }
+                        ]
+                      },
+                      "standing": {
+                        "stats": {
+                          "score": {
+                            "value": 0
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": 64726975,
+                  "identifier": "AA",
+                  "phaseGroup": {
+                    "phase": {
+                      "name": "Pools"
+                    }
+                  },
+                  "fullRoundText": "Winners Quarter-Final",
+                  "lPlacement": 9,
+                  "wPlacement": 5,
+                  "slots": [
+                    {
+                      "entrant": {
+                        "participants": [
+                          {
+                            "prefix": "KITA IKUYO GAME",
+                            "gamerTag": "Tempra"
+                          }
+                        ]
+                      },
+                      "standing": {
+                        "stats": {
+                          "score": {
+                            "value": 3
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "entrant": {
+                        "participants": [
+                          {
+                            "prefix": "",
+                            "gamerTag": "random account 10"
+                          }
+                        ]
+                      },
+                      "standing": {
+                        "stats": {
+                          "score": {
+                            "value": 0
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": 64726969,
+                  "identifier": "U",
+                  "phaseGroup": {
+                    "phase": {
+                      "name": "Pools"
+                    }
+                  },
+                  "fullRoundText": "Winners Round 2",
+                  "lPlacement": 17,
+                  "wPlacement": 9,
+                  "slots": [
+                    {
+                      "entrant": {
+                        "participants": [
+                          {
+                            "prefix": "KITA IKUYO GAME",
+                            "gamerTag": "Tempra"
+                          }
+                        ]
+                      },
+                      "standing": {
+                        "stats": {
+                          "score": {
+                            "value": 3
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "entrant": {
+                        "participants": [
+                          {
+                            "prefix": "",
+                            "gamerTag": "random account 18"
+                          }
+                        ]
+                      },
+                      "standing": {
+                        "stats": {
+                          "score": {
+                            "value": 0
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": 64726957,
+                  "identifier": "I",
+                  "phaseGroup": {
+                    "phase": {
+                      "name": "Pools"
+                    }
+                  },
+                  "fullRoundText": "Winners Round 1",
+                  "lPlacement": 25,
+                  "wPlacement": 17,
+                  "slots": [
+                    {
+                      "entrant": {
+                        "participants": [
+                          {
+                            "prefix": "KITA IKUYO GAME",
+                            "gamerTag": "Tempra"
+                          }
+                        ]
+                      },
+                      "standing": {
+                        "stats": {
+                          "score": {
+                            "value": 3
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "entrant": {
+                        "participants": [
+                          {
+                            "prefix": "",
+                            "gamerTag": "random account 29"
+                          }
+                        ]
+                      },
+                      "standing": {
+                        "stats": {
+                          "score": {
+                            "value": 0
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": 64727141,
+                  "identifier": "C",
+                  "phaseGroup": {
+                    "phase": {
+                      "name": "Top8"
+                    }
+                  },
+                  "fullRoundText": "Winners Final",
+                  "lPlacement": 3,
+                  "wPlacement": 2,
+                  "slots": [
+                    {
+                      "entrant": {
+                        "participants": [
+                          {
+                            "prefix": "",
+                            "gamerTag": "random account 13"
+                          }
+                        ]
+                      },
+                      "standing": {
+                        "stats": {
+                          "score": {
+                            "value": null
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "entrant": {
+                        "participants": [
+                          {
+                            "prefix": "KITA IKUYO GAME",
+                            "gamerTag": "Tempra"
+                          }
+                        ]
+                      },
+                      "standing": {
+                        "stats": {
+                          "score": {
+                            "value": null
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "extensions": {
+    "cacheControl": {
+      "version": 1,
+      "hints": null
+    },
+    "queryComplexity": 648
+  },
+  "actionRecords": []
+}

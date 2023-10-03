@@ -4,12 +4,18 @@
 	"type": "object",
 	"additionalProperties": false,
 	"properties": {
-		"p1_data": {
-			"$ref": "#/definitions/playerScore"
+		"id": {
+            "type": "number"
+        },
+		"player1": {
+			"$ref": "./playerscore.json"
 		},
-		"p2_data": {
-			"$ref": "#/definitions/playerScore"
-		}
+		"player2": {
+			"$ref": "./playerscore.json"
+		},
+		"fullRoundText": {
+            "type": "string"
+        }
 	},
 	"required": ["p1_data","p2_data"]
 }
