@@ -10,13 +10,13 @@ export const Scoreboard = (): JSX.Element => {
         <div className="name-score-bg">
           <div className="name-group">
             <div className="names">
-              <div className="text-wrapper">{scoreboardRep?.player1_prefix}</div>
-              <div className="text-wrapper">{scoreboardRep?.player1_name}</div>
+              <div className="text-wrapper">{scoreboardRep?.player1.prefix}</div>
+              <div className="text-wrapper">{scoreboardRep?.player1.name}</div>
             </div>
           </div>
           <div className="score-group">
             <div className="overlap-group">
-              <div className="score">{scoreboardRep?.player1_score}</div>
+              <div className="score">{scoreboardRep?.player1.score}</div>
             </div>
           </div>
         </div>
@@ -25,14 +25,14 @@ export const Scoreboard = (): JSX.Element => {
         <div className="p-name-group">
           <div className="p-score">
             <div className="score-wrapper">
-              <div className="score">{scoreboardRep?.player2_score}</div>
+              <div className="score">{scoreboardRep?.player2.score}</div>
             </div>
           </div>
         </div>
         <div className="name">
           <div className="p-names">
-            <div className="text-wrapper">{scoreboardRep?.player2_prefix}</div>
-            <div className="text-wrapper">{scoreboardRep?.player2_name}</div>
+            <div className="text-wrapper">{scoreboardRep?.player2.prefix}</div>
+            <div className="text-wrapper">{scoreboardRep?.player2.name}</div>
           </div>
         </div>
       </div>

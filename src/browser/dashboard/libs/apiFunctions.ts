@@ -172,16 +172,26 @@ export const transformApiResponseToScoreboard = (response: APIResponse): Transfo
     }
 
     const fullRoundText = firstSet.slots[0]?.entrant?.paginatedSets?.nodes[0]?.fullRoundText || "";
-    const player1 = firstSet?.slots[0]?.entrant?.participants[0];
-    const player2 = firstSet?.slots[1]?.entrant?.participants[0];
+    const player1Data = firstSet?.slots[0]?.entrant?.participants[0];
+    const player2Data = firstSet?.slots[1]?.entrant?.participants[0];
+
+    const player1 = {
+        name: player1Data?.gamerTag || "Player1",
+        prefix: player1Data?.prefix || "",
+        Xid: "",
+        score: 0
+    };
+
+    const player2 = {
+        name: player2Data?.gamerTag || "Player2",
+        prefix: player2Data?.prefix || "",
+        Xid: "",
+        score: 0
+    };
 
     return {
-        player1_name: player1?.gamerTag || "Player1",
-        player1_prefix: player1?.prefix || "",
-        player1_score: 0,
-        player2_name: player2?.gamerTag || "Player2",
-        player2_prefix: player2?.prefix || "",
-        player2_score: 0,
-        fullRoundText: fullRoundText,
+        player1,
+        player2,
+        fullRoundText: fullRoundText
     };
 };

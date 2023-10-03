@@ -1,0 +1,15 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema",
+
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"p1_data": {
+			"$ref": "#/definitions/playerScore"
+		},
+		"p2_data": {
+			"$ref": "#/definitions/playerScore"
+		}
+	},
+	"required": ["p1_data","p2_data"]
+}
